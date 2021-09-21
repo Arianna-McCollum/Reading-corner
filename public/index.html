@@ -5,9 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reading Corner</title>
+        <!--Link to style sheet-->
+        <link rel="stylesheet" href="./public/style.css">
 </head>
 <body>
-    
-    
+    <header>
+        
+        <!--Main page-->
+    <section class="login-screen">
+    <div class = "title-page">
+        <h1 class="title">
+           Reading Corner
+        </h1>
+        <input class="login-email" type="email" placeholder="Email">
+        <input class="login-pass" type="text" placeholder="Password">
+        <button class="login-btn">Login</button>
+        <h4 class = "login-text">Don't have an account? <button class= "register-page-btn">Register</button></h4>
+    </div>
+    </section>
+    </header>
+
+    <!--Register section-->
+    <section class= "register-screen">
+    <div class="register-page">
+        <input class="register-name" type="text" placeholder="First Name">
+        <input class="register-email" type="email" placeholder="Email">
+        <input class="register-pass" type="text" placeholder="Password">
+        <button class="register-btn">Register</button>
+        <h4 class = "register-text">Have an account? <button class= "login-page-btn">Login</button></h4>
+    </div>
+    </section>
+
+    <!--Dashboard Section-->
+    <section class="dashboard">
+    <div class="dashboard-page">
+        <h4 class="dashboard-title">Reading Corner</h4>
+        <h4 class="user-title">{username}<button class= "logout-page-btn">Logout</button></h4>
+        <div class ="what-read">
+            <h4 class="what-read-title">What I'm Reading</h4>
+            <div class="no-book">
+                <!--SHOULD DISAPPEAR WHEN A BOOK IS CHOSEN-->
+                <input class="book-search" type="text" placeholder="Search For A Book"><button class= "search-btn">Search</button>
+            </div>
+            <div class="dash-api">
+                <!--SINGLE BOOK API APPENDS HERE-->
+            </div>
+            <div class="api-list">
+                <!--API TITLES WHEN SEARCHED-->
+            </div>
+        </div> 
+        <div class="disccussion">
+            <h4 class="discussion-title">Discussion</h4>
+            <div class="comment-section">
+                <!--COMMENTS APPEND HERE-->
+            </div>
+            <input class="comment" type="text" placeholder="Leave A Comment"><button class= "post-btn">Post</button>
+        </div>
+    </div>
+    </section>
+
+    <script src="./public/script.js"></script>
 </body>
 </html>
