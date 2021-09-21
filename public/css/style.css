@@ -12,16 +12,68 @@
     box-sizing: border-box;
     font-family: 'Inknut Antiqua', serif;
     background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 input {
     text-align: center;
     text-decoration: none;
+    padding: 10px;
+    color: var(--tertiary-color);
+    font-size: 25px;
+    font-weight: 600;
     background-color: antiquewhite;
     box-shadow: 2px 2px 10px #ffcb69;
+    border: none;
+    width: 70%;
+
 }
 
 input::placeholder{
+    text-align: center;
+    font-size: 25px;
     color: var(--tertiary-color);
     font-weight: 400;
+}
+
+.register-text,
+.login-text {
+    color: #333333;
+}
+
+a.log-link,
+a.reg-link {
+    color: var(--secondary-color);
+}
+
+.login-title {
+    background-color: var(--quarternary-color);
+    text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    font-size: 50pt;
+    margin-top: 10%;
+    padding: 10px;
+    border-radius: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+.login-pass,
+.login-email,
+.login-btn,
+.login-text {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.login-btn {
+    font-size: 30px;
+    background-color: var(--quarternary-color);
+    border: none;
+    width:30% ;
+    text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+}
+
+.login-text {
+    text-align: center;
 }
