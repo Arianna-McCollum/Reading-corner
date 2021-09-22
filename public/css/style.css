@@ -36,6 +36,20 @@ input::placeholder{
     font-weight: 400;
 }
 
+input.friend-search{
+    width: 60%;
+}
+
+input.book-search{
+    width: 50%;
+    margin-left: 100px;
+}
+
+input.comment{
+    width: 50%;
+    margin-left: 100px;
+}
+
 .register-text,
 .login-text {
     color: #333333;
@@ -84,7 +98,8 @@ a.reg-link {
 }
 
 .login-btn:hover,
-.register-btn:hover {
+.register-btn:hover,
+.logout-page-btn:hover {
     background-color: rgba(252, 171, 117, 0.6);
     transition: all .3s ease-in-out;
 }
@@ -130,7 +145,7 @@ a.reg-link {
 }
 
 .friend-title{
-    background-color: var(--quarternary-color);
+    background-color: var(--quinary-color);
     text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     font-size: 30pt;
@@ -141,7 +156,7 @@ a.reg-link {
 }
 
 .my-friend{
-    background-color: var(--quarternary-color);
+    background-color: var(--quinary-color);
     text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     font-size: 30pt;
@@ -152,7 +167,7 @@ a.reg-link {
 }
 
 .what-read-title{
-    background-color: var(--quarternary-color);
+    background-color: var(--quinary-color);
     text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     font-size: 30pt;
@@ -160,10 +175,11 @@ a.reg-link {
     border-radius: 0px 10px 0px 10px;
     text-align: center;
     margin-top: 10px;
+    width: 50%;
 }
 
 .discussion-title {
-    background-color: var(--quarternary-color);
+    background-color: var(--quinary-color);
     text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     font-size: 30pt;
@@ -171,41 +187,52 @@ a.reg-link {
     padding: 10px;
     border-radius: 0px 10px 0px 10px;
     text-align: center;
+    width: 50%;
 }
 
-.search-btn {
-    font-size: 30px;
+.friend-search-btn,
+.book-search-btn,
+.post-btn {
+    font-size: 20px;
     background-color: var(--quarternary-color);
     border: none;
     width: 35%;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 0px 10px 0px 10px;
     text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
 }
 
+.book-search-btn,
 .post-btn {
-    font-size: 30px;
-    background-color: var(--quarternary-color);
-    border: none;
-    width:35%;
-    margin-top: 20px;
-    border-radius: 0px 10px 0px 10px;
-    text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
-    box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    margin-left: 20px;
+    width: 20%;
 }
 
-.my-friends{
-    background-color: var(--quarternary-color);
+.friend-search-btn{
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+
+li{
+    background-color: var(--tertiary-color);
     text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
-    font-size: 30pt;
+    font-size: 20pt;
+    font-weight: 500;
     margin-top: 10%;
     padding: 10px;
     border-radius: 0px 10px 0px 10px;
     text-align: center;
+    width: 40%;
+    text-decoration: none;
 }
 
+li.mx-auto::marker{
+    
+    color: var(--primary-color);
+}
 .dashboard-title {
     background-color: var(--quarternary-color);
     text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;

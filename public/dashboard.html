@@ -29,21 +29,27 @@
     </header>
             
         
-        <div class="row">
+        <div class="row mx-auto">
             <div class="col-4 friend-section">
                 <h2 class="friend-title"> Add a Friend</h2>
                 <input class="friend-search" type="text" placeholder="Email">
-                <button class= "search-btn">Search</button>
+                <button class= "friend-search-btn">Search</button>
                 <div class="friends-list">
                     <h2 class="my-friend">My Friends</h2>
+                        <ul id="myList" class="friends mx-auto">
+                            <li class="mx-auto">John</li>
+                            <li class="mx-auto">Mary</li>
+                            <li class="mx-auto">Sue</li>
+
+                        </ul>
                 </div>
             </div>
             <div class="col-8 main-section">
                 <div class ="what-read">
-                    <h4 class="what-read-title">What I'm Reading</h4>
+                    <h4 class="what-read-title mx-auto">What I'm Reading</h4>
                     <div class="no-book">
                         <!--SHOULD DISAPPEAR WHEN A BOOK IS CHOSEN-->
-                        <input class="book-search" type="text" placeholder="Search For A Book"><button class= "search-btn">Search</button>
+                        <input class="book-search" type="text" placeholder="Search For A Book"><button class= "book-search-btn">Search</button>
                     </div>
                     <div class="dash-api">
                         <!--SINGLE BOOK API APPENDS HERE-->
@@ -53,7 +59,7 @@
                     </div>
                 </div> 
                 <div class="disccussion">
-                    <h4 class="discussion-title">Discussion</h4>
+                    <h4 class="discussion-title mx-auto">Discussion</h4>
                     <div class="comment-section">
                         <!--COMMENTS APPEND HERE-->
                     </div>
