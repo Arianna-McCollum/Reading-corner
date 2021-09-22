@@ -4,6 +4,7 @@ const express = require('express');
 const PORT = process.env.PORT || 3001;
 const app = express();
 const exphbs = require('express-handlebars');
+const sequelize = require('./config/connection');
 
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
@@ -15,9 +16,12 @@ app.engine('hbs', exphbs({
   defaultLayout: 'index'
 }));
 
-app.listen(PORT, () => {
-  console.log(`API server now on port ${PORT}!`);
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => {
+    console.log(`API server now on port ${PORT}!`);
+  });
 });
+
 
 app.get('/', (req, res) => {
   res.render("login");
