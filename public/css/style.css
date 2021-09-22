@@ -148,7 +148,7 @@ a.reg-link {
     background-color: var(--quinary-color);
     text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
-    font-size: 30pt;
+    font-size: 25pt;
     padding: 10px;
     border-radius: 0px 10px 0px 10px;
     text-align: center;
@@ -159,7 +159,7 @@ a.reg-link {
     background-color: var(--quinary-color);
     text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
-    font-size: 30pt;
+    font-size: 25pt;
     padding: 10px;
     border-radius: 0px 10px 0px 10px;
     text-align: center;
@@ -170,7 +170,7 @@ a.reg-link {
     background-color: var(--quinary-color);
     text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
-    font-size: 30pt;
+    font-size: 25pt;
     padding: 10px;
     border-radius: 0px 10px 0px 10px;
     text-align: center;
@@ -182,8 +182,8 @@ a.reg-link {
     background-color: var(--quinary-color);
     text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
-    font-size: 30pt;
-    margin-top: 10%;
+    font-size: 25pt;
+    margin-top: 5%;
     padding: 10px;
     border-radius: 0px 10px 0px 10px;
     text-align: center;
@@ -221,7 +221,7 @@ li{
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     font-size: 20pt;
     font-weight: 500;
-    margin-top: 10%;
+    margin-top: 5%;
     padding: 10px;
     border-radius: 0px 10px 0px 10px;
     text-align: center;
