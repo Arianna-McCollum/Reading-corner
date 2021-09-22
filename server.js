@@ -24,5 +24,9 @@ sequelize.sync({ force: false }).then(() => {
 
 
 app.get('/', (req, res) => {
-  res.render("main");
+  res.render("login");
 });
+
+app.get('/register', (req, res) => {
+  res.render("register");
+})
