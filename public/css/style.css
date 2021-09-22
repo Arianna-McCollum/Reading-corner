@@ -210,13 +210,12 @@ a.reg-link {
     background-color: var(--quarternary-color);
     text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
-    font-size: 30pt;
+    font-size: 20pt;
     padding: 10px;
     border-radius: 0px 10px 0px 10px;
     text-align: center;
-    margin: 10px;
-    position: relative;
-    left: -1050px;
+    margin-top: 10px;
+    margin-right: 60%;
 }
 
 .friend-section{
@@ -237,7 +236,7 @@ a.reg-link {
     background-color: var(--quinary-color);
     text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
-    font-size: 30pt;
+    font-size: 20pt;
     padding: 10px;
     border-radius: 0px 10px 0px 10px;
     text-align: center;
@@ -245,7 +244,7 @@ a.reg-link {
 }
 
 .logout-page-btn{
-    font-size: 30px;
+    font-size: 20px;
     background-color: var(--quarternary-color);
     border: none;
     padding: 10px;
