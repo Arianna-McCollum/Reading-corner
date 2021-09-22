@@ -24,5 +24,5 @@ sequelize.sync({ force: false }).then(() => {
 
 
 app.get('/', (req, res) => {
-  res.render("login");
+  res.render("main");
 });
