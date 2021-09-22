@@ -229,6 +229,11 @@ li{
     text-decoration: none;
 }
 
+li.comments {
+    background-color: var(--quarternary-color);
+    font-size: 15pt;
+}
+
 li.mx-auto::marker{
     
     color: var(--primary-color);
