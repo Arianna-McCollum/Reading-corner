@@ -45,8 +45,13 @@ input.book-search{
     margin-left: 100px;
 }
 
-input.comment{
-    width: 50%;
+input.comment,
+input.comment-title,
+input.comment-au,
+input.comment-ch
+{
+    width: 40%;
+    margin-top: 5px;
     margin-left: 100px;
 }
 
@@ -174,9 +179,33 @@ a.reg-link {
     padding: 10px;
     border-radius: 0px 10px 0px 10px;
     text-align: center;
-    margin-top: 10px;
+    
     width: 50%;
 }
+
+/* .co {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 5px;
+    margin-left: 10%;
+}
+
+textarea.form-control.co {
+    width: 50%;
+    margin-bottom: 5px;
+} */
+
+.comment-section2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 100px;
+
+    
+    width:100%;
+}
+
 
 .discussion-title {
     background-color: var(--quinary-color);
@@ -203,15 +232,8 @@ a.reg-link {
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
 }
 
-.book-search-btn,
 .post-btn {
-    margin-left: 20px;
-    width: 20%;
-}
-
-.friend-search-btn{
-    font-size: 20px;
-    margin-left: 5px;
+    width: 10%;
 }
 
 
@@ -221,7 +243,6 @@ li{
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     font-size: 20pt;
     font-weight: 500;
-    margin-top: 5%;
     padding: 10px;
     border-radius: 0px 10px 0px 10px;
     text-align: center;
@@ -272,7 +293,7 @@ li.mx-auto::marker{
     padding: 10px;
     border-radius: 0px 10px 0px 10px;
     text-align: center;
-    margin: 10px;
+    
 }
 
 .logout-page-btn{
