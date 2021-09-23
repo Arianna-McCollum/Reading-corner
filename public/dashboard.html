@@ -27,52 +27,27 @@
             <button class="logout-page-btn">Logout</button>
         </div>
     </header>
-            
-        
-        <div class="row mx-auto">
-            <div class="col-4 friend-section">
-                <h2 class="friend-title"> Add a Friend</h2>
-                <input class="friend-search" type="text" placeholder="Email">
-                <button class= "friend-search-btn">Search</button>
-                <div class="friends-list">
-                    <h2 class="my-friend">My Friends</h2>
-                        <ul id="myList" class="friends mx-auto">
-                            <li class="mx-auto">John</li>
-                            <li class="mx-auto">Mary</li>
-                            <li class="mx-auto">Sue</li>
-
-                        </ul>
-                </div>
-            </div>
-            <div class="col-8 main-section">
+            <div class="mx-auto">
                 <div class ="what-read">
                     <h4 class="what-read-title mx-auto">What I'm Reading</h4>
-                    <div class="no-book">
-                        <!--SHOULD DISAPPEAR WHEN A BOOK IS CHOSEN-->
-                        <input class="book-search" type="text" placeholder="Search For A Book"><button class= "book-search-btn">Search</button>
-                    </div>
-                    <div class="dash-api mx-auto">
-                        <!--SINGLE BOOK API APPENDS HERE-->
-                        <h2 class ="book-title mt-3">Harry Potter</h2>
-                        <p class="book-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit neque eligendi excepturi laboriosam eaque minima, reprehenderit facilis. Fuga neque voluptatibus doloribus provident inventore quisquam, a eos exercitationem minus maxime recusandae.</p>
-                    </div>
-                    <div class="api-list">
-                        <!--API TITLES WHEN SEARCHED-->
-                    </div>
-                </div> 
-                <div class="disccussion">
-                    <h4 class="discussion-title mx-auto">Discussion</h4>
-                    <div class="comment-section">
-                        <!--COMMENTS APPEND HERE-->
-                        <ul class="mx-auto">
-                            <li class="mx-auto comments"> Blah Blah Blah</li>
+                    <div class="book-list">
+                        <ul>
+                            
                         </ul>
                     </div>
-                    <input class="comment" type="text" placeholder="Leave A Comment"><button class= "post-btn">Post</button>
                 </div>
-            </div>
-        </div>
-    </div>
+                <div class="disccussion">
+                    <h4 class="discussion-title mx-auto">Discussion</h4>
+                </div>
+                <div class="comment-section2">
+                    <!--COMMENTS APPEND HERE-->
+                    <ul class="mx-auto comment-list">
+                    </ul>
+                        <h4 class="mx-auto">Leave a comment</h4> <label for="message">Message</label> <textarea name="msg" id="" msg cols="30" rows="5" class="form-control co"></textarea>
+                        <div class="form-group co"> <label for="name">Title</label> <input type="text" name="name" id="fullname" class="form-control"> </div>
+                        <div class="form-group co"> <label for="email">Author</label> <input type="text" name="email" id="email" class="form-control"> </div>
+                        <div class="form-group co"> <button type="button" id="post" class="btn">Post Comment</button> </div>
+                </div>
 </section>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
