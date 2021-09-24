@@ -38,10 +38,10 @@ User.init(
                 len: [4]
             }
         },
-        book_id: {
-            type: DataTypes.INTEGER,
-            allowNull: true
-        }
+        // book_id: {
+        //     type: DataTypes.INTEGER,
+        //     allowNull: true
+        // }
     },
     {
         hooks: {
@@ -57,3 +57,5 @@ User.init(
         modelName : 'user'
     }
 );
+
+module.exports = User;

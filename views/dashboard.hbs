@@ -2,7 +2,7 @@
     <div class="dashboard-page">
         <div class="dashboard-header">
             <h4 class="dashboard-title">Reading Corner</h4>
-            <h4 class="user-title">{username}</h4>
+            <h4 class="user-title">{{user.username}}</h4>
             <button class="logout-page-btn" id ="logout" >Logout</button>
         </div>
     </header>
@@ -12,12 +12,15 @@
                     <div class="book-list mx-auto">
                         <ul>
                             <li class="post-book d-flex mx-auto">
-                                <span class = "mx-auto d-flex book-title">Harry Potter -<span class="author d-flex mx-auto">JK Rowling</span><button class="delete-post-btn2 d-flex mx-auto">X</button></span>
+                                <form class = "new-book-form">
+                                <span class = "mx-auto d-flex book-title">{{title}} -<span class="author d-flex mx-auto">{{author}}</span><button class="delete-post-btn2 d-flex mx-auto">X</button></span>
                             </li>
                         </ul>
-                        <input type="text" placeholder="Title" class="post-list d-flex mx-auto">
-                        <input type="text" placeholder="Author" class="post-list d-flex mx-auto">
+                        <form class = "new-book-form">
+                        <input name="book-title" type="text" placeholder="Title" class="post-list d-flex mx-auto">
+                        <input name="book-author" type="text" placeholder="Author" class="post-list d-flex mx-auto">
                         <button type="button" id="post" class="post-book-btn d-flex mx-auto">Post</button> 
+                        </form>
                     </div>
                 </div>
                 <div class="disccussion">
@@ -28,39 +31,19 @@
                     <ul class="mx-auto comment-list">
                         <li class="box">
                             <div class="comment mt-4 text-justify">
-                                <h4 class="comTitle">Harry Potter-<span class="chapternum">Chapter 19</span></h4> <span class ="date">- 20 October, 2018</span> <br>
-                                <p class="comText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                                <button class="delete-post-btn d-flex mx-auto">delete</button>
-                            </div>
-                        </li>
-                        <li class="box">
-                            <div class="comment text-justify mt-4">
-                                <h4 class="comTitle">Twilight-<span class="chapternum">Chapter 1</span></h4> <span class ="date">- 20 October, 2018</span> <br>
-                                <p class="comText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                                <button class="delete-post-btn d-flex mx-auto">delete</button>
-                            </div>
-                        </li>
-                        <li class="box">
-                            <div class="comment mt-4 text-justify">
-                                <h4 class="comTitle">Atomic Habits-<span class="chapternum">Chapter 20</span></h4> <span class ="date">- 20 October, 2018</span> <br>
-                                <p class="comText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                                <button class="delete-post-btn d-flex mx-auto">delete</button>
-                            </div>
-                        </li>
-                        <li class="box">
-                            <div class="comment mt-4 text-justify">
-                                <h4 class="comTitle">The Power of Now-<span class="chapternum">Chapter 9</span></h4> <span class ="date">- 20 October, 2018</span> <br>
-                                <p class="comText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                                <h4 class="comTitle">{{ title }}-<span class="chapternum">Chapter {{ chapter }}</span></h4> <span class ="date">- {{format_date created_at }}</span> <br>
+                                <p class="comText">{{ post_content }}</p>
                                 <button class="delete-post-btn d-flex mx-auto">delete</button>
                             </div>
                         </li>
                     </ul>
                     <form class ="new-post-form">
                         <h4 class="comment-title mx-auto">Leave a comment</h4>
-                        <div class="form-group co"><input type="text" name="title" class="form-control" placeholder="Title of Book"> </div>
-                        <div class="form-group co"><input type="text" name="chapter" class="form-control" placeholder="Chapter Number"> </div>
-                        <textarea name="msg" id="" msg cols="30" rows="5" class="form-control co" placeholder="Message"></textarea>
+                        <div class="form-group co"><input type="text" name="post-title" class="form-control" placeholder="Title of Book"> </div>
+                        <div class="form-group co"><input type="text" name="post-chapter" class="form-control" placeholder="Chapter Number"> </div>
+                        <textarea name="post-msg" id="" msg cols="30" rows="5" class="form-control co" placeholder="Message"></textarea>
                         <div class="form-group co"> <button type="submit" id="post" class="post-btn">Post</button> </div>
                     </form>
                 </div>
+
 </section>
