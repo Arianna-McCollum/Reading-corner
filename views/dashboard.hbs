@@ -3,7 +3,7 @@
         <div class="dashboard-header">
             <h4 class="dashboard-title">Reading Corner</h4>
             <h4 class="user-title">{username}</h4>
-            <button class="logout-page-btn">Logout</button>
+            <button class="logout-page-btn" id ="logout" >Logout</button>
         </div>
     </header>
             <div class="mx-auto">
@@ -12,7 +12,7 @@
                     <div class="book-list mx-auto">
                         <ul>
                             <li class="post-book d-flex mx-auto">
-                                <span class = "mx-auto d-flex book-title">Harry Potter -<span class="author d-flex mx-auto">JK Rowling</span><button class="delete-btn2 d-flex mx-auto">X</button></span>
+                                <span class = "mx-auto d-flex book-title">Harry Potter -<span class="author d-flex mx-auto">JK Rowling</span><button class="delete-post-btn2 d-flex mx-auto">X</button></span>
                             </li>
                         </ul>
                         <input type="text" placeholder="Title" class="post-list d-flex mx-auto">
@@ -30,35 +30,37 @@
                             <div class="comment mt-4 text-justify">
                                 <h4 class="comTitle">Harry Potter-<span class="chapternum">Chapter 19</span></h4> <span class ="date">- 20 October, 2018</span> <br>
                                 <p class="comText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                                <button class="delete-btn d-flex mx-auto">delete</button>
+                                <button class="delete-post-btn d-flex mx-auto">delete</button>
                             </div>
                         </li>
                         <li class="box">
                             <div class="comment text-justify mt-4">
                                 <h4 class="comTitle">Twilight-<span class="chapternum">Chapter 1</span></h4> <span class ="date">- 20 October, 2018</span> <br>
                                 <p class="comText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                                <button class="delete-btn d-flex mx-auto">delete</button>
+                                <button class="delete-post-btn d-flex mx-auto">delete</button>
                             </div>
                         </li>
                         <li class="box">
                             <div class="comment mt-4 text-justify">
                                 <h4 class="comTitle">Atomic Habits-<span class="chapternum">Chapter 20</span></h4> <span class ="date">- 20 October, 2018</span> <br>
                                 <p class="comText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                                <button class="delete-btn d-flex mx-auto">delete</button>
+                                <button class="delete-post-btn d-flex mx-auto">delete</button>
                             </div>
                         </li>
                         <li class="box">
                             <div class="comment mt-4 text-justify">
                                 <h4 class="comTitle">The Power of Now-<span class="chapternum">Chapter 9</span></h4> <span class ="date">- 20 October, 2018</span> <br>
                                 <p class="comText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                                <button class="delete-btn d-flex mx-auto">delete</button>
+                                <button class="delete-post-btn d-flex mx-auto">delete</button>
                             </div>
                         </li>
                     </ul>
+                    <form class ="new-post-form">
                         <h4 class="comment-title mx-auto">Leave a comment</h4>
                         <div class="form-group co"><input type="text" name="title" class="form-control" placeholder="Title of Book"> </div>
                         <div class="form-group co"><input type="text" name="chapter" class="form-control" placeholder="Chapter Number"> </div>
                         <textarea name="msg" id="" msg cols="30" rows="5" class="form-control co" placeholder="Message"></textarea>
-                        <div class="form-group co"> <button type="button" id="post" class="post-btn">Post</button> </div>
+                        <div class="form-group co"> <button type="submit" id="post" class="post-btn">Post</button> </div>
+                    </form>
                 </div>
 </section>
