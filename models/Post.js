@@ -13,7 +13,7 @@ Post.init(
             primary_key: true,
             autoIncrement: true
         },
-        title:{
+        chapter:{
             type: DataTypes.STRING,
             allowNull: false,
         },
