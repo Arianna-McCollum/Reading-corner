@@ -30,10 +30,15 @@
             <div class="mx-auto">
                 <div class ="what-read">
                     <h4 class="what-read-title mx-auto">What I'm Reading</h4>
-                    <div class="book-list">
+                    <div class="book-list mx-auto">
                         <ul>
-                            
+                            <li class="post-book d-flex mx-auto">
+                                <span class = "mx-auto d-flex book-title">Harry Potter -<span class="author d-flex mx-auto">JK Rowling</span><button class="delete-btn2 d-flex mx-auto">X</button></span>
+                            </li>
                         </ul>
+                        <input type="text" placeholder="Title" class="post-list d-flex mx-auto">
+                        <input type="text" placeholder="Author" class="post-list d-flex mx-auto">
+                        <button type="button" id="post" class="post-book-btn d-flex mx-auto">Post</button> 
                     </div>
                 </div>
                 <div class="disccussion">
@@ -42,11 +47,40 @@
                 <div class="comment-section2">
                     <!--COMMENTS APPEND HERE-->
                     <ul class="mx-auto comment-list">
+                        <li class="box">
+                            <div class="comment mt-4 text-justify">
+                                <h4 class="comTitle">Harry Potter-<span class="chapternum">Chapter 19</span></h4> <span class ="date">- 20 October, 2018</span> <br>
+                                <p class="comText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                                <button class="delete-btn d-flex mx-auto">delete</button>
+                            </div>
+                        </li>
+                        <li class="box">
+                            <div class="comment text-justify mt-4">
+                                <h4 class="comTitle">Twilight-<span class="chapternum">Chapter 1</span></h4> <span class ="date">- 20 October, 2018</span> <br>
+                                <p class="comText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                                <button class="delete-btn d-flex mx-auto">delete</button>
+                            </div>
+                        </li>
+                        <li class="box">
+                            <div class="comment mt-4 text-justify">
+                                <h4 class="comTitle">Atomic Habits-<span class="chapternum">Chapter 20</span></h4> <span class ="date">- 20 October, 2018</span> <br>
+                                <p class="comText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                                <button class="delete-btn d-flex mx-auto">delete</button>
+                            </div>
+                        </li>
+                        <li class="box">
+                            <div class="comment mt-4 text-justify">
+                                <h4 class="comTitle">The Power of Now-<span class="chapternum">Chapter 9</span></h4> <span class ="date">- 20 October, 2018</span> <br>
+                                <p class="comText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                                <button class="delete-btn d-flex mx-auto">delete</button>
+                            </div>
+                        </li>
                     </ul>
-                        <h4 class="mx-auto">Leave a comment</h4> <label for="message">Message</label> <textarea name="msg" id="" msg cols="30" rows="5" class="form-control co"></textarea>
-                        <div class="form-group co"> <label for="name">Title</label> <input type="text" name="name" id="fullname" class="form-control"> </div>
-                        <div class="form-group co"> <label for="email">Author</label> <input type="text" name="email" id="email" class="form-control"> </div>
-                        <div class="form-group co"> <button type="button" id="post" class="btn">Post Comment</button> </div>
+                        <h4 class="comment-title mx-auto">Leave a comment</h4>
+                        <div class="form-group co"><input type="text" name="title" class="form-control" placeholder="Title of Book"> </div>
+                        <div class="form-group co"><input type="text" name="chapter" class="form-control" placeholder="Chapter Number"> </div>
+                        <textarea name="msg" id="" msg cols="30" rows="5" class="form-control co" placeholder="Message"></textarea>
+                        <div class="form-group co"> <button type="button" id="post" class="post-btn">Post</button> </div>
                 </div>
 </section>
 
