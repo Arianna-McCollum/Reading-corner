@@ -15,7 +15,8 @@
     color: var(--secondary-color);
 }
 
-input {
+input,
+textarea.form-control.co {
     text-align: center;
     text-decoration: none;
     padding: 10px;
@@ -28,8 +29,14 @@ input {
     width: 70%;
 }
 
+textarea.form-control.co {
+    width: 100%;
+}
 
-input::placeholder{
+
+input::placeholder,
+input.form-control::placeholder,
+textarea.form-control.co::placeholder{
     text-align: center;
     font-size: 25px;
     color: var(--tertiary-color);
@@ -45,8 +52,13 @@ input.book-search{
     margin-left: 100px;
 }
 
-input.comment{
-    width: 50%;
+input.comment,
+input.comment-title,
+input.comment-au,
+input.comment-ch
+{
+    width: 40%;
+    margin-top: 5px;
     margin-left: 100px;
 }
 
@@ -174,20 +186,42 @@ a.reg-link {
     padding: 10px;
     border-radius: 0px 10px 0px 10px;
     text-align: center;
-    margin-top: 10px;
+    
     width: 50%;
 }
+
+
+.comment-section2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 100px;   
+    width:100%;
+}
+
 
 .discussion-title {
     background-color: var(--quinary-color);
     text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     font-size: 25pt;
-    margin-top: 5%;
+    margin-top: 2%;
     padding: 10px;
     border-radius: 0px 10px 0px 10px;
     text-align: center;
     width: 50%;
+}
+
+.comment-title {
+    background-color: var(--quarternary-color);
+    text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    font-size: 25pt;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    padding: 10px;
+    border-radius: 0px 10px 0px 10px;
+    text-align: center;
 }
 
 .friend-search-btn,
@@ -203,38 +237,26 @@ a.reg-link {
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
 }
 
-.book-search-btn,
 .post-btn {
-    margin-left: 20px;
-    width: 20%;
-}
-
-.friend-search-btn{
-    font-size: 20px;
-    margin-left: 5px;
+    width: 10%;
 }
 
 
-li{
+li.box{
     background-color: var(--tertiary-color);
     text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
-    font-size: 20pt;
+    font-size: 20px;
     font-weight: 500;
-    margin-top: 5%;
     padding: 10px;
     border-radius: 0px 10px 0px 10px;
     text-align: center;
-    width: 40%;
+    width: 100%;
+    margin: 8px 0px;
     text-decoration: none;
 }
 
-li.comments {
-    background-color: var(--quarternary-color);
-    font-size: 15pt;
-}
-
-li.mx-auto::marker{
+li.box::marker{
     
     color: var(--primary-color);
 }
@@ -246,13 +268,51 @@ li.mx-auto::marker{
     padding: 10px;
     border-radius: 0px 10px 0px 10px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-right: 60%;
 }
 
-.friend-section{
-    margin-top: 40px;
+div.comment.mt-4.text-justify,
+span,
+h4.comTitle,
+p.comText {
+    background-color: var(--tertiary-color);
 }
+
+h4.comTitle {
+    font-size: 25px;
+}
+
+span.book-title,
+span.author {
+    background-color: var(--quarternary-color);
+    text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    font-size: 25px;
+}
+
+span.book-title{
+    padding: 10px;
+    box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    margin: 5px 0px;
+}
+
+.delete-btn {
+    background-color: var(--quarternary-color);
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.delete-btn2 {
+    background-color: var(--tertiary-color);
+    border: none;
+    padding: 5px;
+    border-radius: 20%;
+}
+
+
+
 
 .main-section {
     margin-top: 40px;
@@ -270,9 +330,10 @@ li.mx-auto::marker{
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     font-size: 20pt;
     padding: 10px;
+    margin-top: 10px;
     border-radius: 0px 10px 0px 10px;
     text-align: center;
-    margin: 10px;
+    
 }
 
 .logout-page-btn{
@@ -284,6 +345,20 @@ li.mx-auto::marker{
     text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     margin: 10px;
+}
+
+input.post-list {
+    width: 20%;
+}
+
+.post-book-btn {
+    background-color: var(--quarternary-color);
+    border: none;
+    padding: 5px;
+    border-radius: 0px 10px 0px 10px;
+    text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    margin-top: 8px;
 }
 
 
