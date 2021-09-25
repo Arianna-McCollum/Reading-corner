@@ -286,6 +286,36 @@ li.mx-auto::marker{
     margin: 10px;
 }
 
+.modal-header{
+    background-color: var(--quarternary-color);
+}
+
+.modal-title {
+    background: none;
+}
+
+.btn-close{
+    background: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: bold;
+    font-size: 28px
+}
+
+.modal-body {
+    background: var(--quinary-color);
+}
+
+.modal-text {
+    background: none;
+}
+
+
+
+
+
 
 
 

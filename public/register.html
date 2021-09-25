@@ -24,16 +24,29 @@
             <h1 class="register-title">
                 Register
              </h1><br><br>
-            <input class="register-name" type="text" placeholder="First Name">
-            <input class="register-email" type="email" placeholder="Email">
-            <input class="register-pass" type="text" placeholder="Password">
-            <button class="register-btn">Create Account</button><br><br><br>
+            <form class="register-form">
+                <input class="register-name" type="text" placeholder="First Name" id="username-signup">
+                <input class="register-email" type="email" placeholder="Email"  id="username-signup">
+                <input class="register-pass" type="text" placeholder="Password"  id="password-signup">
+                <button class="register-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Create Account</button><br><br><br>
+            </form>
             <h4 class = "register-text">Have an account? <a class="log-link" href="/login">Login</a></h4>
         </div>
         </section>
 
     </header>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Error: Please enter your password and email address!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                &times;</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>

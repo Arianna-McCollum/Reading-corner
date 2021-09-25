@@ -25,16 +25,31 @@
            Reading Corner
         </h1>
         <div class="d-flex flex-column">
-        <input class="login-email mx-auto" type="email" placeholder="Email">
-        <input class="login-pass mx-auto " type="text" placeholder="Password">
-        <button class="login-btn mx-auto">Login</button>
+        <form class="login-form">
+            <input class="login-email mx-auto" type="email" placeholder="Email" id="email-login">
+            <input class="login-pass mx-auto " type="text" placeholder="Password" id="password-login">
+            <button class="btn login-btn mx-auto" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+        </form>
         </div>
         <h4 class = "login-text mx-auto">Don't have an account? <a class="reg-link" href="/register.html">Register</a></h4>
     </div>
     </section>
-
     </header>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Error: Please enter your password and email address!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                &times;</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+<!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
