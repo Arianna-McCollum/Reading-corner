@@ -10,14 +10,15 @@ Post.init(
         id : {
             type: DataTypes.INTEGER,
             allowNull: false,
-            primary_key: true,
-            autoIncrement: true
+            primaryKey: true,
+            autoIncrement: true,
+
         },
-        chapter:{
+        title:{
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: false
         },
-        comment:{
+        post_content:{
             type: DataTypes.STRING,
             allowNull: false
         },
