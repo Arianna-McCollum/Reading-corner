@@ -509,6 +509,32 @@ input.post-list {
 
 }
 
+.modal-header{
+    background-color: var(--quarternary-color);
+}
+
+.modal-title {
+    background: none;
+}
+
+.btn-close{
+    background: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: bold;
+    font-size: 28px
+}
+
+.modal-body {
+    background: var(--quinary-color);
+}
+
+.modal-text {
+    background: none;
+}
+
 
 /* MEDIA QUERIES FOR TABLETS AND SMALLER - LOGIN PAGE */
 @media screen and (max-width: 980px) {
@@ -550,6 +576,7 @@ input.post-list {
     
 }
 
+
 /* MEDIA QUERIES FOR TABLETS AND SMALLER - REGISTER PAGE */
 @media screen and (max-width: 980px) {
     body, html {
@@ -573,6 +600,7 @@ input.post-list {
         font-size: 20px;
     }
 }
+
 
 
 
