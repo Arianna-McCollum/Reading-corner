@@ -1,13 +1,18 @@
 <section class="login-screen col-6 mx-auto">
+    <form class="login-form">
     <div class = "login-page">
         <h1 class="login-title">
            Reading Corner
         </h1>
         <div class="d-flex flex-column">
-        <input class="login-email mx-auto" type="email" placeholder="Email">
-        <input class="login-pass mx-auto " type="text" placeholder="Password">
-        <button class="login-btn mx-auto">Login</button>
+        <form class="login-form">
+        <input class="login-email mx-auto" type="email" id="email-login"placeholder="Email">
+        <input class="login-pass mx-auto " type="text" id="password-login" placeholder="Password">
+        <button class="login-btn mx-auto" type="submit">Login</button>
+        </form>
         </div>
-        <h4 class = "login-text mx-auto">Don't have an account? <a class="reg-link" href="/register.html">Register</a></h4>
+        <h4 class = "login-text mx-auto">Don't have an account? <a class="reg-link" href="/register">Register</a></h4>
     </div>
+    </form>
     </section>
+    <script src="../public/js/login.js"></script>
