@@ -15,6 +15,67 @@
     color: var(--secondary-color);
 }
 
+/* HEADER */
+
+.dashboard-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.dashboard-title {
+    background-color: var(--quarternary-color);
+    text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    font-size: 20pt;
+    border-radius: 0px 10px 0px 10px;
+    text-align: center;
+    width: 50%;
+    padding: 5px;
+    margin: 20px;
+}
+
+.header-right {
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+}
+
+.user-title {
+    background-color: var(--quinary-color);
+    text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    font-size: 20pt;;
+    border-radius: 0px 10px 0px 10px;
+    text-align: center;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    
+}
+
+.logout-page-btn{
+    font-size: 20px;
+    background-color: var(--quarternary-color);
+    border: none;
+    border-radius: 0px 10px 0px 10px;
+    text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* END HEADER */
+
+
+
 input,
 textarea.form-control.co {
     text-align: center;
@@ -260,17 +321,6 @@ li.box::marker{
     
     color: var(--primary-color);
 }
-.dashboard-title {
-    background-color: var(--quarternary-color);
-    text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
-    box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
-    font-size: 20pt;
-    padding: 10px;
-    border-radius: 0px 10px 0px 10px;
-    text-align: center;
-    margin-top: 5px;
-    margin-right: 60%;
-}
 
 div.comment.mt-4.text-justify,
 span,
@@ -311,40 +361,8 @@ span.book-title{
     border-radius: 20%;
 }
 
-
-
-
 .main-section {
     margin-top: 40px;
-}
-
-.dashboard-header {
-    display: flex;
-    flex-direction: row;
-    justify-content:right;
-}
-
-.user-title {
-    background-color: var(--quinary-color);
-    text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
-    box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
-    font-size: 20pt;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 0px 10px 0px 10px;
-    text-align: center;
-    
-}
-
-.logout-page-btn{
-    font-size: 20px;
-    background-color: var(--quarternary-color);
-    border: none;
-    padding: 10px;
-    border-radius: 0px 10px 0px 10px;
-    text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
-    box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
-    margin: 10px;
 }
 
 input.post-list {
@@ -361,6 +379,200 @@ input.post-list {
     margin-top: 8px;
 }
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER - DASHBOARD */
+@media screen and (max-width: 980px) {
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .dashboard-header {
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-right {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+    }
+
+    .user-title {
+        padding: 10px;
+    }
+
+    .what-read-title, .comment-title, .discussion-title {
+        width: 80%;
+    }
+
+    .book-title {
+        width: 65%;
+        display: flex;
+        align-items: center;
+    }
+
+    input.post-list {
+        width: 40%;
+    }
+
+    .delete-btn2 {
+        padding: 5px 10px;
+        margin: 5px 0;
+    }
+
+    .comment-section2 {
+        padding: 5px 25px;
+    }
+    
+    .comment-list li {
+        margin: 25px 0;
+        list-style: none;
+    }
+
+    input.form-control {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .post-btn {
+        width: 200px;
+    }
+}
+
+/* MEDIA QUERY MOBILE PHONES AND SMALLER - DASHBOARD */
+@media screen and (max-width: 575px) {
+    .dashboard-title {
+        margin: 10px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .header-left {
+        margin: 0 20px;
+    }
+
+    .header-right {
+        margin: 5px;
+        justify-content: space-evenly;
+    }
+
+    .user-title {
+        width: 50%;
+        font-size: 12px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logout-page-btn {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    span.book-title, span.author {
+        font-size: 15px;
+    }
+
+    .book-title {
+        width: 90%;
+    }
+
+    .delete-btn2 {
+        padding: 5px 15px;
+        margin: 0 0;
+    }
+
+    .what-read-title, .comment-title, .discussion-title {
+        width: 80%;
+        font-size: 25px;
+    }
+
+    input.form-control {
+        display: block;
+        margin: 5px auto;
+        width: 70%;
+        font-size: 15px;
+    }
+
+    li.box {
+        font-size: 12px;
+        margin: 20px 0;
+    }
+
+    h4.comTitle {
+        font-size: 20px;
+        text-align: center;
+    }
+
+}
+
+
+/* MEDIA QUERIES FOR TABLETS AND SMALLER - LOGIN PAGE */
+@media screen and (max-width: 980px) {
+    body, html {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .login-header{
+        padding: 10px;
+    }
+
+    .login-title {
+        padding: 0;
+        margin: 0;
+        font-size: 50px;
+    }
+
+    .login-text {
+        margin: 20px;
+    }
+}
+
+/* MEDIA QUERY MOBILE PHONES AND SMALLER - Login */
+@media screen and (max-width: 575px) {
+
+    section.login-screen {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .login-title {
+        font-size: 40px;
+        padding: 10px;
+        text-align: center;
+    }
+    
+}
+
+/* MEDIA QUERIES FOR TABLETS AND SMALLER - REGISTER PAGE */
+@media screen and (max-width: 980px) {
+    body, html {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .register-title {
+        margin: 10px;
+    }
+
+    section.register-screen {
+        max-width: 70%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .register-btn{
+        margin: 10px;
+        font-size: 20px;
+    }
+}
 
 
 
