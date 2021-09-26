@@ -1,12 +1,14 @@
 const express = require('express');
-
+const path = require('path');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
 const exphbs = require('express-handlebars');
 const sequelize = require('./config/connection');
 
-app.use(express.static('public'));
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(require('./controllers/'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -22,15 +24,3 @@ sequelize.sync({ force: false }).then(() => {
   });
 });
 
-
-app.get('/', (req, res) => {
-  res.render("login");
-});
-
-app.get('/login', (req, res) => {
-  res.render("login");
-});
-
-app.get('/register', (req, res) => {
-  res.render("register");
-});

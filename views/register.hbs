@@ -1,12 +1,18 @@
     <section class= "register-screen col-6 mx-auto">
+        <form class ="signup-form">
         <div class="register-page">
             <h1 class="register-title">
                 Register
              </h1><br><br>
-            <input class="register-name" type="text" placeholder="First Name">
-            <input class="register-email" type="email" placeholder="Email">
-            <input class="register-pass" type="text" placeholder="Password">
-            <button class="register-btn">Create Account</button><br><br><br>
+             <form class="signup-form">
+            <input class="register-name" type="text" id="username-signup"placeholder="Username">
+            <input class="register-email" type="email" id="email-signup" placeholder="Email">
+            <input class="register-pass" type="text" id="password-signup" placeholder="Password">
+            <button class="register-btn" type="submit">Create Account</button><br><br><br>
             <h4 class = "register-text">Have an account? <a class="log-link" href="/login">Login</a></h4>
+            </form>
         </div>
-        </section>
+        </form>
+        <script src="../public/js/register.js"></script>
+    </section>
+    
