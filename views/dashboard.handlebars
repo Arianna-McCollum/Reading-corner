@@ -1,3 +1,4 @@
+{{#if loggedIN}}
     <section class = "dashboard-screen">
     <div class="dashboard-page">
         <div class="dashboard-header">
@@ -13,7 +14,7 @@
                         <ul>
                             <li class="post-book d-flex mx-auto">
                                 
-                                <span class = "mx-auto d-flex book-title">{{book.title}} -<span class="author d-flex mx-auto">{{book.author}}</span><button class="delete-post-btn2 d-flex mx-auto">X</button></span>
+                                {{!-- <span class = "mx-auto d-flex book-title">{{book.title}} -<span class="author d-flex mx-auto">{{book.author}}</span><button class="delete-post-btn2 d-flex mx-auto">X</button></span> --}}
                                 
                             </li>
                         </ul>
@@ -27,6 +28,7 @@
                 <div class="disccussion">
                     <h4 class="discussion-title mx-auto">Discussion</h4>
                 </div>
+                
                 <div class="comment-section2">
                     <!--COMMENTS APPEND HERE-->
                     <ul class="mx-auto comment-list">
@@ -38,6 +40,7 @@
                             </div>
                         </li>
                     </ul>
+                    
                     <form class ="new-post-form">
                         <h4 class="comment-title mx-auto">Leave a comment</h4>
                         <div class="form-group co"><input type="text" name="post-title" class="form-control" placeholder="Title of Book"> </div>
@@ -49,4 +52,5 @@
 
 </section>
     <script src="/js/login.js"></script>
-    <script src="/js/register.js"></script>
+    <script src="/js/signup.js"></script>
+{{/if}}

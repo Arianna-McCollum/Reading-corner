@@ -1,3 +1,3 @@
 DROP DATABASE IF EXISTS readingc_db;
 
-CREATE DATABASE readingc_db
+CREATE DATABASE readingc_db;
