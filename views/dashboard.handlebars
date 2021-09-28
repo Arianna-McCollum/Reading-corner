@@ -17,7 +17,7 @@
                         <ul>
                             <li class="post-book d-flex mx-auto">
                                 
-                                <span class = "mx-auto d-flex book-title">{{book_title}} -<span class="author d-flex mx-auto">{{author}}</span><button class="delete-post-btn2 d-flex mx-auto">X</button></span>
+                                <span class = "mx-auto d-flex book-title">{{book.book_title}} -<span class="author d-flex mx-auto">{{book.author}}</span><button type="button" class="delete-post-btn2 d-flex mx-auto">X</button></span>
                                 
                             </li>
                         </ul>
@@ -25,7 +25,7 @@
                         {{/if}}
                         <input name="book-title" type="text" placeholder="Title" class="post-list d-flex mx-auto">
                         <input name="book-author" type="text" placeholder="Author" class="post-list d-flex mx-auto">
-                        <button type="button" id="post" class="post-book-btn d-flex mx-auto">Post</button> 
+                        <button type="submit" id="post" class="post-book-btn d-flex mx-auto">Post</button> 
                         </form>
                     </div>
                 </div>
@@ -41,9 +41,9 @@
                     <ul class="mx-auto comment-list">
                         <li class="box">
                             <div class="comment mt-4 text-justify">
-                                <h4 class="comTitle">{{ title }}-<span class="chapternum">Chapter {{ chapter }}</span></h4> <span class ="date">- {{format_date created_at }}</span> <br>
-                                <p class="comText">{{ post_content }}</p>
-                                <button class="delete-post-btn d-flex mx-auto">delete</button>
+                                <h4 class="comTitle">{{ post.title }}-<span class="chapternum">Chapter {{ post.chapter }}</span></h4> <span class ="date">- {{format_date created_at }}</span> <br>
+                                <p class="comText">{{ post.post_content }}</p>
+                                <button type="button" class="delete-post-btn d-flex mx-auto">delete</button>
                             </div>
                         </li>
                     </ul>
@@ -52,10 +52,14 @@
                         <h4 class="comment-title mx-auto">Leave a comment</h4>
                         <div class="form-group co"><input type="text" name="post-title" class="form-control" placeholder="Title of Book"> </div>
                         <div class="form-group co"><input type="text" name="post-chapter" class="form-control" placeholder="Chapter Number"> </div>
-                        <textarea name="post-msg" id="" msg cols="30" rows="5" class="form-control co" placeholder="Message"></textarea>
+                        <textarea name="post-content" id="" msg cols="30" rows="5" class="form-control co" placeholder="Message"></textarea>
                         <div class="form-group co"> <button type="submit" id="post" class="post-btn">Post</button> </div>
                     </form>
                 </div>
 
 </section>
 <script src = "/js/logout.js"></script>
+<script src = "/js/add-book.js"></script>
+<script src = "/js/add-post.js"></script>
+<script src = "/js/delete-post.js"></script>
+
