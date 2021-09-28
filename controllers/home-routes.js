@@ -19,9 +19,9 @@ router.get('/register', (req, res) => {
   res.render('register');
 });
 
-router.get('/dashboard',withAuth, (req, res) => {
-  res.render('dashboard');
-});
+// router.get('/dashboard',withAuth, (req, res) => {
+//   res.render('dashboard');
+// });
 
 router.get('/', (req, res) => {
   if (req.session.loggedIn) {

@@ -26,6 +26,10 @@ const helpers = require('./utils/helpers');
 const hbs = exphbs.create({ helpers });
 
 app.engine('handlebars', hbs.engine);
+// app.engine('handlebars', exphbs({ defaultLayout: "main"}));
+
+
+
 app.set('view engine', 'handlebars');
 
 app.use(express.json());
