@@ -11,6 +11,9 @@
                 <div class ="what-read">
                     <h4 class="what-read-title mx-auto">What I'm Reading</h4>
                     <div class="book-list mx-auto">
+                        <form class = "new-book-form">
+                        {{#if books.length}}
+                        {{#each books as |book|}}
                         <ul>
                             <li class="post-book d-flex mx-auto">
                                 
@@ -18,7 +21,8 @@
                                 
                             </li>
                         </ul>
-                        <form class = "new-book-form">
+                        {{/each}}
+                        {{/if}}
                         <input name="book-title" type="text" placeholder="Title" class="post-list d-flex mx-auto">
                         <input name="book-author" type="text" placeholder="Author" class="post-list d-flex mx-auto">
                         <button type="button" id="post" class="post-book-btn d-flex mx-auto">Post</button> 
@@ -31,12 +35,13 @@
                 
                 <div class="comment-section2">
                     <!--COMMENTS APPEND HERE-->
+                    <form class ="new-post-form">
                     {{#if posts.length}}
                         {{#each posts as |post|}}
                     <ul class="mx-auto comment-list">
                         <li class="box">
                             <div class="comment mt-4 text-justify">
-                                <h4 class="comTitle">{{ post.title }}-<span class="chapternum">Chapter {{ post.chapter }}</span></h4> <span class ="date">- {{format_date created_at }}</span> <br>
+                                <h4 class="comTitle">{{ title }}-<span class="chapternum">Chapter {{ chapter }}</span></h4> <span class ="date">- {{format_date created_at }}</span> <br>
                                 <p class="comText">{{ post_content }}</p>
                                 <button class="delete-post-btn d-flex mx-auto">delete</button>
                             </div>
@@ -44,7 +49,6 @@
                     </ul>
                     {{/each}}
                     {{/if}}
-                    <form class ="new-post-form">
                         <h4 class="comment-title mx-auto">Leave a comment</h4>
                         <div class="form-group co"><input type="text" name="post-title" class="form-control" placeholder="Title of Book"> </div>
                         <div class="form-group co"><input type="text" name="post-chapter" class="form-control" placeholder="Chapter Number"> </div>

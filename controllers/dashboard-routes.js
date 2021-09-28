@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Post, User, Book} = require('../models');
 const withAuth = require('../utils/auth');
 
-// get all posts for dashboard
+
 router.get('/', withAuth, (req, res) => {
   console.log(req.session);
   console.log('======================');
@@ -57,7 +57,7 @@ router.get('/', withAuth, (req, res) => {
       }
     ]
   })
-    .then(dbPostData => {
+    .then(dbBookData => {
       const books = dbBookData.map(book => book.get({ plain: true }));
       const username = req.session.username;
       res.render('dashboard', { books, username, loggedIn: true });
