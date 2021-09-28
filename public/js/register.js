@@ -23,7 +23,7 @@ async function signupFormHandler(event) {
         document.location.replace('/dashboard');
 
       } else {
-        $('#myModal').modal('show');
+        $('#myModal2').modal('show');
       }
     }
 }
