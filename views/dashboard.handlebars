@@ -3,7 +3,7 @@
     <div class="dashboard-page">
         <div class="dashboard-header">
             <h4 class="dashboard-title">Reading Corner</h4>
-            <h4 class="user-title">{{user.username}}</h4>
+            <h4 class="user-title">{{ username }}</h4>
             <button class="logout-page-btn" id ="logout" >Logout</button>
         </div>
     </header>
@@ -32,15 +32,17 @@
                 <div class="comment-section2">
                     <!--COMMENTS APPEND HERE-->
                     {{#if posts.length}}
+                        {{#each posts as |post|}}
                     <ul class="mx-auto comment-list">
                         <li class="box">
                             <div class="comment mt-4 text-justify">
-                                <h4 class="comTitle">{{ title }}-<span class="chapternum">Chapter {{ chapter }}</span></h4> <span class ="date">- {{format_date created_at }}</span> <br>
-                                <p class="comText">{{ post_content }}</p>
+                                <h4 class="comTitle">{{ book.title }}-<span class="chapternum">Chapter {{ book.chapter }}</span></h4> <span class ="date">- {{format_date created_at }}</span> <br>
+                                <p class="comText">{{ posts.post_url }}</p>
                                 <button class="delete-post-btn d-flex mx-auto">delete</button>
                             </div>
                         </li>
                     </ul>
+                    {{/each}}
                     {{/if}}
                     <form class ="new-post-form">
                         <h4 class="comment-title mx-auto">Leave a comment</h4>
@@ -53,3 +55,4 @@
 
 </section>
 <script src = "/js/logout.js"></script>
+<script src = "/js/index.js"></script>
