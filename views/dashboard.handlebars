@@ -14,7 +14,7 @@
                         <ul>
                             <li class="post-book d-flex mx-auto">
                                 
-                                {{!-- <span class = "mx-auto d-flex book-title">{{book.title}} -<span class="author d-flex mx-auto">{{book.author}}</span><button class="delete-post-btn2 d-flex mx-auto">X</button></span> --}}
+                                <span class = "mx-auto d-flex book-title">{{book_title}} -<span class="author d-flex mx-auto">{{author}}</span><button class="delete-post-btn2 d-flex mx-auto">X</button></span>
                                 
                             </li>
                         </ul>
@@ -36,8 +36,8 @@
                     <ul class="mx-auto comment-list">
                         <li class="box">
                             <div class="comment mt-4 text-justify">
-                                <h4 class="comTitle">{{ book.title }}-<span class="chapternum">Chapter {{ book.chapter }}</span></h4> <span class ="date">- {{format_date created_at }}</span> <br>
-                                <p class="comText">{{ posts.post_url }}</p>
+                                <h4 class="comTitle">{{ post.title }}-<span class="chapternum">Chapter {{ post.chapter }}</span></h4> <span class ="date">- {{format_date created_at }}</span> <br>
+                                <p class="comText">{{ post_content }}</p>
                                 <button class="delete-post-btn d-flex mx-auto">delete</button>
                             </div>
                         </li>
@@ -55,4 +55,3 @@
 
 </section>
 <script src = "/js/logout.js"></script>
-<script src = "/js/index.js"></script>

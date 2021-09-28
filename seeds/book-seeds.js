@@ -2,15 +2,17 @@ const { Book } = require('../models');
 
 const bookdata = [
   {
-    title: 'Donec posuere metus.',
+    book_title: 'Donec posuere metus.',
     author: 'Alex the Great',
+    user_id: 9
   },
   {
-    title: 'Donec posuere metus.',
+    book_title: 'Donec posuere metus.',
     author: 'Alex the Notso Great',
+    user_id:9
   }
-]
+];
 
 const seedBooks = () => Book.bulkCreate(bookdata);
 
-module.exports = seedBooks
+module.exports = seedBooks;

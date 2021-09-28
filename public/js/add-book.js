@@ -4,7 +4,7 @@ async function newFormHandler(event) {
     const title = document.querySelector('input[name="book-title"]').value;
     const author = document.querySelector('input[name="book-author"]').value;
   
-    const response = await fetch(`/api/posts`, {
+    const response = await fetch(`/api/books`, {
       method: 'POST',
       body: JSON.stringify({
         title,

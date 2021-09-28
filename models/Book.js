@@ -13,14 +13,21 @@ Book.init(
             primaryKey: true,
             autoIncrement: true
         },
-        title:{
+        book_title:{
             type: DataTypes.STRING,
             allowNull: false,
         },
         author:{
             type: DataTypes.STRING,
             allowNull: false
-        }
+        },
+        user_id: {
+            type: DataTypes.INTEGER,
+            references: {
+              model: 'user',
+              key: 'id'
+            }
+          }
     },
     {
         sequelize,

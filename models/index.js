@@ -14,5 +14,10 @@ Post.belongsTo(User, {
   onDelete: 'SET NULL'
 });
 
+Book.belongsTo(User, {
+  foreignKey: 'user_id',
+  onDelete: 'SET NULL'
+});
+
 
 module.exports = { User, Post, Book};

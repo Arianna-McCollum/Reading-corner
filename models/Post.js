@@ -17,7 +17,11 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-    post_url: {
+    chapter: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    post_content: {
       type: DataTypes.STRING,
       allowNull: false,
     },
