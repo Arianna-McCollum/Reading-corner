@@ -9,7 +9,16 @@ User.hasMany(Post, {
   foreignKey: 'user_id'
 });
 
+User.hasMany(Book, {
+  foreignKey: 'user_id'
+});
+
 Post.belongsTo(User, {
+  foreignKey: 'user_id',
+  onDelete: 'SET NULL'
+});
+
+Book.belongsTo(User, {
   foreignKey: 'user_id',
   onDelete: 'SET NULL'
 });
