@@ -2,9 +2,11 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
-const methodOverride = require('method-override')
+const cookieParser =require('cookie-parser');
+const passport = require('passport');
 
 const app = express();
+app.use(cookieParser());
 const PORT = process.env.PORT || 3001;
 
 const sequelize = require("./config/connection");
@@ -20,14 +22,14 @@ const sess = {
   })
 };
 
-app.use(session(sess));
 
+app.use(session(sess));
 const helpers = require('./utils/helpers');
 
 const hbs = exphbs.create({ helpers });
 
 app.engine('handlebars', hbs.engine);
-// app.engine('handlebars', exphbs({ defaultLayout: "main"}));
+
 
 
 
@@ -36,7 +38,6 @@ app.set('view engine', 'handlebars');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(methodOverride('_method'));
 
 app.use(require('./controllers/'));
 

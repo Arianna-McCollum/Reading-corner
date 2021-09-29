@@ -21,5 +21,6 @@ async function newBookHandler(event) {
       alert(response.statusText);
     }
   }
+
   
   document.querySelector('.new-book-form').addEventListener('submit', newBookHandler);

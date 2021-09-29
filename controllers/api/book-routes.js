@@ -57,6 +57,7 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', withAuth, (req, res) => {
+  console.log('Cookies: ', req.cookies);
   Book.create({
     book_title: req.body.book_title,
     author: req.body.author,

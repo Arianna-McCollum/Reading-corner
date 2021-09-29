@@ -4,6 +4,7 @@ const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, (req, res) => {
   console.log(req.session);
+  console.log('Cookies: ', req.cookies);
   console.log('======================');
   Book.findAll({
     where: {

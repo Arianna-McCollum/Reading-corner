@@ -4,6 +4,7 @@ const User = require('./User');
 const Book = require('./Book');
 
 
+
 // create associations
 User.hasMany(Post, {
   foreignKey: 'user_id'
