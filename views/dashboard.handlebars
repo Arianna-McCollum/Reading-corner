@@ -17,7 +17,7 @@
                         <ul>
                             <li class="post-book d-flex mx-auto">
                                 
-                                <span class = "mx-auto d-flex book-title">{{book.book_title}} -<span class="author d-flex mx-auto">{{book.author}}</span><button type="button" class="delete-post-btn2 d-flex mx-auto">X</button></span>
+                                <span class = "mx-auto d-flex book-title">{{book.book_title}} -<span class="author d-flex mx-auto">{{book.author}}</span><button type="button" class="delete-post-btn2 d-flex mx-auto" id={{book.id}}>X</button></span>
                                 
                             </li>
                         </ul>
@@ -43,7 +43,7 @@
                             <div class="comment mt-4 text-justify">
                                 <h4 class="comTitle">{{ post.title }}-<span class="chapternum">Chapter {{ post.chapter }}</span></h4> <span class ="date">- {{format_date created_at }}</span> <br>
                                 <p class="comText">{{ post.post_content }}</p>
-                                <button type="button" class="delete-post-btn d-flex mx-auto">delete</button>
+                                <button type="button" class="delete-post-btn d-flex mx-auto" id={{post.id}}>delete</button>
                             </div>
                         </li>
                     </ul>
@@ -62,4 +62,5 @@
 <script src = "/js/add-book.js"></script>
 <script src = "/js/add-post.js"></script>
 <script src = "/js/delete-post.js"></script>
+<script src = "/js/delete-book.js"></script>
 
