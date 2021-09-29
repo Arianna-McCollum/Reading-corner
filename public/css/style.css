@@ -6,7 +6,7 @@
     --quinary-color: #997B66;
   }
 
-  
+  /* Navbar Template from https://codepen.io/nibble0101 */
   .lines-container {
     width: 60px;
     margin-left: auto;
@@ -148,6 +148,32 @@
     content: "\2212";
   } 
 
+/* Scroll to top Button */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    font-family: 'Inknut Antiqua', serif;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  
+  #myBtn:hover {
+    background-color: #333333;
+  }
+
+/*Main Styling*/
 * {
     margin: 0;
     padding: 0;
@@ -222,7 +248,7 @@ body.body {
     padding: 5px;
 }
 
-/* END HEADER */
+/* Input Styling */
 
 
 
@@ -289,6 +315,7 @@ a.reg-link {
     color:#333333;
 }
 
+/*Login Styling*/
 
 .login-title {
     background-color: var(--quarternary-color);
@@ -341,6 +368,8 @@ a.reg-link {
     min-height: 100vh;
   }
 
+/*Register Styling*/
+
 .register-title{
     background-color: var(--quarternary-color);
     text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
@@ -367,28 +396,7 @@ a.reg-link {
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
 }
 
-.friend-title{
-    background-color: var(--quinary-color);
-    text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
-    box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
-    font-size: 25pt;
-    padding: 10px;
-    border-radius: 0px 10px 0px 10px;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.my-friend{
-    background-color: var(--quinary-color);
-    text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
-    box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
-    font-size: 25pt;
-    padding: 10px;
-    border-radius: 0px 10px 0px 10px;
-    text-align: center;
-    margin-top: 30px;
-}
-
+/*Dashboard Styling*/
 .what-read-title{
     background-color: var(--quinary-color);
     text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
@@ -435,7 +443,6 @@ a.reg-link {
     text-align: center;
 }
 
-.friend-search-btn,
 .book-search-btn,
 .post-btn {
     font-size: 20px;
@@ -527,6 +534,71 @@ input.post-list {
     text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
     margin-top: 8px;
+}
+
+/* Modal Styling*/
+div.modal-header{
+    background-color: var(--quarternary-color);
+    transition: 200ms ease-in;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+}
+
+div.modal-content {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+h5.modal-title {
+    background: none;
+    border: none;
+    padding: 30px;
+    text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+.btn-close{
+    background: none;
+    border: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: bold;
+    font-size: 28px
+}
+
+span.close-span {
+    background: none;
+    border: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: bold;
+    font-size: 28px
+}
+
+.modal-body {
+    background: var(--quinary-color);
+    border: none;
+}
+
+.modal-text {
+    background: none;
+    border: none;
+}
+
+div#myModal.modal.fade.show{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+div.modal-dialog.modal-dialog-centered{
+    background-color: rgba(0, 0, 0, 0);
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER - DASHBOARD */
