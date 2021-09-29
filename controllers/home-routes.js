@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const withAuth = require('../utils/auth');
+
 
 
 router.get('/', (req, res) => {
@@ -21,6 +21,7 @@ router.get('/register', (req, res) => {
 
 router.get('/', (req, res) => {
   if (req.session.loggedIn) {
+    console.log('Cookies: ', req.cookies);
     res.redirect('/dashboard');
     return;
   }

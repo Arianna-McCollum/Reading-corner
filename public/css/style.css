@@ -280,14 +280,6 @@ textarea.form-control.co::placeholder{
     font-weight: 400;
 }
 
-input.friend-search{
-    width: 60%;
-}
-
-input.book-search{
-    width: 50%;
-    margin-left: 100px;
-}
 
 input.comment,
 input.comment-title,
@@ -313,6 +305,21 @@ a.reg-link {
 .log-link:hover,
 .reg-link:hover {
     color:#333333;
+}
+
+input.add-friend {
+    width: 50%;
+}
+
+.add-friend-button {
+    font-size: 25px;
+    background-color: var(--quarternary-color);
+    border: none;
+    border-radius: 0px 10px 0px 10px;
+    text-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    box-shadow: 4.949747468305832px 4.949747468305833px 10px #825f45;
+    margin: 10px;
+    padding: 10px;
 }
 
 /*Login Styling*/
