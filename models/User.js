@@ -39,6 +39,7 @@ User.init(
       }
     }
   },
+
   {
     hooks: {
       // set up beforeCreate lifecycle "hook" functionality
@@ -52,6 +53,7 @@ User.init(
         return updatedUserData;
       }
     },
+    
     sequelize,
     timestamps: false,
     freezeTableName: true,

@@ -25,6 +25,7 @@ Book.belongsTo(User, {
 
 // Friendship associations
 Friendship.belongsTo(User, {
+  //  as: 'info',
    foreignKey: 'friend' 
 });
 
