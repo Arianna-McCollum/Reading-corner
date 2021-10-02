@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Post, User, Book} = require('../models');
 const withAuth = require('../utils/auth');
+// const [IsAuthenticated, destroySession] = require('../utils/passport-auth')
 
 router.get('/', withAuth, (req, res) => {
   console.log(req.session);

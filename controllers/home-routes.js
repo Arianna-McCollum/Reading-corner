@@ -1,14 +1,16 @@
 const router = require('express').Router();
 const withAuth = require('../utils/auth');
+const [IsAuthenticated, destroySession] = require('../utils/passport-auth');
+const passport = require('passport');
 
 
 router.get('/', (req, res) => {
   res.render("login");
 });
 
-router.get('/login', (req,res) => {
+router.get('/login', withAuth, (req,res) => {
   res.render("login");
-  if (req.session.loggedIn) {
+  if (IsAuthenticated) {
     res.redirect('/dashboard');
     return;
   }

@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const { Post, User} = require('../../models');
-const withAuth = require('../../utils/auth');
+// const withAuth = require('../../utils/auth');
+const [IsAuthenticated, destroySession] = require('../../utils/passport-auth');
+
 
 // get all users
 router.get('/', (req, res) => {
@@ -59,7 +61,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
-router.post('/', withAuth, (req, res) => {
+router.post('/', IsAuthenticated, (req, res) => {
   // expects {title: 'Taskmaster goes public!', post_url: 'https://taskmaster.com/press', user_id: 1}
   Post.create({
     title: req.body.title,
@@ -74,7 +76,7 @@ router.post('/', withAuth, (req, res) => {
     });
 });
 
-router.delete('/:id', withAuth, (req, res) => {
+router.delete('/:id', IsAuthenticated, (req, res) => {
   console.log('id', req.params.id);
   Post.destroy({
     where: {

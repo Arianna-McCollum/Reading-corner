@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const { User, Book} = require('../../models');
-const withAuth = require('../../utils/auth');
+// const withAuth = require('../../utils/auth');
+const [IsAuthenticated, destroySession] = require('../../utils/passport-auth');
+
 
 router.get('/', (req, res) => {
   console.log('======================');
@@ -56,7 +58,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
-router.post('/', withAuth, (req, res) => {
+router.post('/', IsAuthenticated, (req, res) => {
   Book.create({
     book_title: req.body.book_title,
     author: req.body.author,
@@ -69,7 +71,7 @@ router.post('/', withAuth, (req, res) => {
     });
 });
 
-router.delete('/:id', withAuth, (req, res) => {
+router.delete('/:id', IsAuthenticated, (req, res) => {
   console.log('id', req.params.id);
   Book.destroy({
     where: {
