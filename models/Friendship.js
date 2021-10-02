@@ -1,10 +1,10 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-// create our User model
+// create our Friendship model
 class Friendship extends Model {}
 
-// create fields/columns for User model
+// create fields/columns for Friendship model
 Friendship.init(
   {
     id: {
