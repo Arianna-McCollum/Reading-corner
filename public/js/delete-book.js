@@ -1,10 +1,8 @@
 async function deleteBook(event) {
     event.preventDefault();
-    console.log('click')
   
     const id = event.target.id;
     
-    console.log(id);
     const response = await fetch(`/api/books/${id}`, {
       method: 'DELETE',
       body: JSON.stringify({

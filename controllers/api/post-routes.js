@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Post, User} = require('../../models');
 const withAuth = require('../../utils/auth');
 
-// get all users
+// get all posts
 router.get('/', (req, res) => {
   console.log('======================');
   Post.findAll({
@@ -27,6 +27,7 @@ router.get('/', (req, res) => {
     });
 });
 
+// gets single post by post id
 router.get('/:id', (req, res) => {
   Post.findOne({
     where: {
@@ -59,6 +60,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
+// 
 router.post('/', withAuth, (req, res) => {
   console.log('Cookies: ', req.cookies);
   Post.create({

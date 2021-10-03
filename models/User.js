@@ -37,6 +37,9 @@ User.init(
       validate: {
         len: [4]
       }
+    },
+    friendsList: {
+      type: DataTypes.STRING,
     }
   },
 
