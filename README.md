@@ -3,7 +3,7 @@
   ![badge](https://img.shields.io/badge/license-MIT-blue)<br>
   
   ## Description
-  Do you like to read? Are you the type to takes notes and reflect on what you've just read? Then I have the application for you, introducing reading corner! A simple little place for you to create an account and be able to record the books you've read and also your reflections on any particular chapters that struck a cord with you. 
+  Do you like to read? Are you the type to takes notes and reflect on what you've just read? Then I have the application for you, introducing reading corner! A simple little place for you to create an account and be able to record the books you've read and also your reflections on any particular chapters that struck a chord with you. 
   <br>
   
   Deploy Link:
